@@ -1,0 +1,265 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #F5F6FA;
+    color: #2C3E50;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(to right, #4A90E2, #50E3C2);
+    color: #FFFFFF;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.ai-applications {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 5 auto;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.card .image img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-top: 15px;
+    color: #333;
+}
+
+.card p {
+    font-size: 1em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.card button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.card button:hover {
+    background-color: #218838;
+}
+
+
+
+.hero {
+    padding: 3rem 1rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+}
+
+nav a {
+    font-weight: bold;
+    color: #FFFFFF; 
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background 0.3s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color:aqua;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    background: #FFFFFF; 
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #4A90E2; 
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+
+.ai-stats,
+.media-container,
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.stat-card,
+.feature,
+.article,
+.faq-item {
+    background: #F5F6FA; 
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    margin:5px;
+}
+
+.stat-card i {
+    font-size: 2rem;
+    color: #4A90E2; 
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    color: #4A90E2; 
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 0.8rem;
+    background-color: #4A90E2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background-color: #50E3C2;
+}
+
+footer {
+    background: #2C3E50;
+    color: #FFFFFF;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+.social-media a {
+    color: #FFFFFF; 
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+
+.social-media a:hover{
+    color:aqua;
+}
+
+.newsletter {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter input {
+    padding: 0.5rem;
+    width: 60%;
+    border: none;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+.newsletter button {
+    padding: 0.5rem 1rem;
+    background: #4A90E2; 
+    color: #FFFFFF; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .newsletter input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+.stat-card:hover,
+.feature:hover,
+.article:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+#faq p,
+#blog p {
+    color: #333; 
+    text-decoration: none; 
+}
