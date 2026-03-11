@@ -7,7 +7,7 @@ The website provides information about Artificial Intelligence and includes mult
 
 ## 🌐 Live Website
 
-https://your-netlify-site.netlify.app/
+https://spiffy-kringle-6171ae.netlify.app/
 
 ---
 
